@@ -55,12 +55,24 @@
         .section {
             display: none;
         }
+        .flash-message {
+            color: green; /* or use a suitable color */
+            margin-bottom: 20px;
+            text-align: center; /* Center the message */
+        }
     </style>
 </head>
 <body>
 
     <h1>Compliance Questions Form</h1>
-    
+
+    <!-- Flash Message Display -->
+    @if (session('success'))
+        <div class="flash-message">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <!-- Open the form with a POST request and add CSRF token -->
     <form action="{{ route('signup.submit') }}" method="POST">
         @csrf
