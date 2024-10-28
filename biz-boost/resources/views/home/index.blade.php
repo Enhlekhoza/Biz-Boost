@@ -43,7 +43,11 @@
         <!-- Topbar Start -->
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>signup</small></a>
+                        <a href="{{ route('signup') }}">
+                            <small class="me-3 text-dark">
+                                <i class="fa fa-user text-primary me-2"></i>signup
+                            </small>
+                        </a>
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
                             <div class="dropdown-menu rounded">
@@ -75,7 +79,7 @@
                         <a href="index.html" class="nav-item nav-link active">Dashboard</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="{{ route('blog.index') }}" class="nav-item nav-link">Blogs</a>
+                        <a href="blog.html" class="nav-item nav-link">Blogs</a>
                 </div>
             </nav>
 
@@ -95,7 +99,7 @@
                                         </p>
                                         <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
                                             <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="{{ route('quiz.index') }}">Take A Quiz</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +120,7 @@
                                         </p>
                                         <div class="d-flex justify-content-center flex-shrink-0 mb-4">
                                             <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="{{ route('quiz.index') }}">Take A Quiz</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -198,9 +202,9 @@
         <div class="container-fluid service pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-5 mb-4">We Services provided best offer</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    <h4 class="text-primary">Marketplace for Professional Services</h4>
+                    <h1 class="display-5 mb-4">Advertise and Connect with Professionals</h1>
+                    <p class="mb-0">A platform for vetted professionals including accountants, tax advisors, compliance experts, and social media freelancers. Each professional is charged a monthly fee to showcase their services.
                     </p>
                 </div>
                 <div class="row g-4">
@@ -210,8 +214,8 @@
                                 <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
                             <div class="rounded-bottom p-4">
-                                <a href="#" class="h4 d-inline-block mb-4"> Strategy Consulting</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                <a href="#" class="h4 d-inline-block mb-4"> Accountants</a>
+                                <p class="mb-4">Find certified accountants to help manage finances, prepare financial statements, and offer business insights.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -223,8 +227,8 @@
                                 <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
                             <div class="rounded-bottom p-4">
-                                <a href="#" class="h4 d-inline-block mb-4">Financial Advisory</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                <a href="#" class="h4 d-inline-block mb-4">Tax Advisors</a>
+                                <p class="mb-4">Connect with tax experts to ensure compliance, optimize tax strategies, and manage filings efficiently.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -237,7 +241,7 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4">Managements</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                <p class="mb-4">Collaborate with experts to enhance your online presence and engage your target audience.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -249,8 +253,8 @@
                                 <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
                             <div class="rounded-bottom p-4">
-                                <a href="#" class="h4 d-inline-block mb-4">Supply Optimization</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                <a href="#" class="h4 d-inline-block mb-4">Legal Advisors</a>
+                                <p class="mb-4">Access experienced legal advisors to help with business contracts, compliance, and legal strategy.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -276,7 +280,7 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4">Marketing Consulting</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                <p class="mb-4">Partner with marketing experts to craft strategies, improve outreach, and grow your business.
                                 </p>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                             </div>
@@ -302,8 +306,8 @@
                             <div class="feature-icon p-4 mb-4">
                                 <i class="fas fa-chart-line fa-4x text-primary"></i>
                             </div>
-                            <h4>Global Management</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
+                            <h4>Micro-Loans & Financing</h4>
+                            <p class="mb-4">Low-interest micro-loans, flexible repayment terms, and options designed to empower entrepreneurs to grow their businesses
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -313,8 +317,8 @@
                             <div class="feature-icon p-4 mb-4">
                                 <i class="fas fa-university fa-4x text-primary"></i>
                             </div>
-                            <h4>Corporate Banking</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
+                            <h4>Business Incubator Program</h4>
+                            <p class="mb-4">The goal is to create a nurturing environment for startups in underserved areas.
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -324,8 +328,8 @@
                             <div class="feature-icon p-4 mb-4">
                                 <i class="fas fa-file-alt fa-4x text-primary"></i>
                             </div>
-                            <h4>Asset Management</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
+                            <h4>One-on-One Mentorship</h4>
+                            <p class="mb-4">Connect business owners with experienced mentors who understand the challenges of operating in informal economies. 
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -335,8 +339,8 @@
                             <div class="feature-icon p-4 mb-4">
                                 <i class="fas fa-hand-holding-usd fa-4x text-primary"></i>
                             </div>
-                            <h4>Investment Bank</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
+                            <h4>Business Compliance Support</h4>
+                            <p class="mb-4">Assist small businesses in navigating legal and regulatory requirements, such as business registration, tax compliance, and permits. 
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
