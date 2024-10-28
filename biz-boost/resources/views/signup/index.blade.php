@@ -74,7 +74,7 @@
     @endif
 
     <!-- Open the form with a POST request and add CSRF token -->
-    <form action="{{ route('signup.submit') }}" method="POST">
+    <form action="{{ route('signup.store') }}" method="POST">
         @csrf
 
         <h2>Welcome to Biz Boost SA</h2>
