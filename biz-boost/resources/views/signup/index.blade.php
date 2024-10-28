@@ -61,11 +61,14 @@
 
     <h1>Compliance Questions Form</h1>
     
-    <form>
+    <!-- Open the form with a POST request and add CSRF token -->
+    <form action="{{ route('signup.submit') }}" method="POST">
+        @csrf
+
         <h2>Welcome to Biz Boost SA</h2>
 
         <label>Are you a small business owner or a micro lender?</label>
-        <select id="businessType" onchange="showRelevantSection()">
+        <select id="businessType" name="businessType" onchange="showRelevantSection()">
             <option value="">Select an option</option>
             <option value="smallBusiness">Small Business</option>
             <option value="microLender">Micro Lender</option>
