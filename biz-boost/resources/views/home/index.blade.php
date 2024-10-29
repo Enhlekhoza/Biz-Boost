@@ -79,7 +79,8 @@
                         <a href="index.html" class="nav-item nav-link active">Dashboard</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                        <a href="{{ route('blog.index') }}" class="nav-item nav-link">Blogs</a>
+
                 </div>
             </nav>
 
@@ -95,10 +96,9 @@
                                     <div class="text-sm-center text-md-end">
                                         <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Biz Boost SA</h4>
                                         <h1 class="display-4 text-uppercase text-white mb-4">Empowering SMEs and Microlenders for Growth</h1></h1>
-                                        <p class="mb-5 fs-5">  At Biz Boost, we are dedicated to empowering small and medium enterprises (SMEs) and microlenders by providing innovative financial solutions tailored to your unique needs. Our platform connects you with essential resources and expert guidance to help your business thrive in a competitive landscape. Join us in building a brighter financial future for all!
-                                        </p>
+                                        <p class="mb-5 fs-5">  At Biz Boost, we are dedicated to transforming the financial landscape for small businesses in townships and informal settlements. Our micro-lending platform is designed to empower entrepreneurs with the resources they need to grow and thrive. We believe that every business, no matter how small, has the potential to make a significant impact in its community.
                                         <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
-                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Take Quiz</a>
                                             <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@
                                     <div class="text-center">
                                         <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Biz Boost SA</h4>
                                         <h1 class="display-4 text-uppercase text-white mb-4">Empowering SMEs and Microlenders for Growth</h1></h1>
-                                        <p class="mb-5 fs-5">  At Biz Boost, we are dedicated to empowering small and medium enterprises (SMEs) and microlenders by providing innovative financial solutions tailored to your unique needs. Our platform connects you with essential resources and expert guidance to help your business thrive in a competitive landscape. Join us in building a brighter financial future for all!
+                                        <p class="mb-5 fs-5">  At Biz Boost, we are dedicated to transforming the financial landscape for small businesses in townships and informal settlements. Our micro-lending platform is designed to empower entrepreneurs with the resources they need to grow and thrive. We believe that every business, no matter how small, has the potential to make a significant impact in its community.
                                         </p>
                                         <div class="d-flex justify-content-center flex-shrink-0 mb-4">
                                             <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
@@ -141,16 +141,16 @@
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
                             <h4 class="text-primary">About Us</h4>
-                            <h1 class="display-5 mb-4">Meet our company unless miss the opportunity</h1>
-                            <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum velit temporibus repudiandae ipsa, eaque perspiciatis cumque incidunt tenetur sequi reiciendis.
+                            <h1 class="display-5 mb-4">Let’s boost your business together!</h1>
+                            <p class="mb-4">Our mission is simple: to provide accessible and affordable financial solutions that enable entrepreneurs to overcome barriers to success. Whether you’re launching a new venture or seeking to expand an existing one, Biz Boost is your partner in progress.
                             </p>
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-6 col-xl-6">
                                     <div class="d-flex">
                                         <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
                                         <div class="ms-4">
-                                            <h4>Business Consuluting</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h4>Micro Lending Solutions</h4>
+                                            <p>Whether you’re starting a new venture or looking to expand your existing business, we’re here to support you every step of the way.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -158,20 +158,20 @@
                                     <div class="d-flex">
                                         <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
                                         <div class="ms-4">
-                                            <h4>Year Of Expertise</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h4>Interactive Quiz: Assess Your Readiness</h4>
+                                            <p>Not sure if you’re ready for a micro-loan? Take our interactive quiz! It’s designed to help you evaluate your business needs and readiness for funding. Click the button below to get started!</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Discover Now</a>
+                                    <a href="{{ route('quiz1.index') }}" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Take A Quiz</a>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex">
                                         <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
                                         <div>
                                             <h4>Call Us</h4>
-                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+01234567890</p>
+                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+2768276059</p>
                                         </div>
                                     </div>
                                 </div>
