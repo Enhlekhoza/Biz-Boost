@@ -19,7 +19,12 @@ Route::post('/signup', [SignupController::class, 'storeSignupData'])->name('sign
 // Route for the blog page
 Route::get('/blog', function () {
     return view('blog.index'); 
-})->name('blog.index'); // Naming the route
+})->name('blog.index'); 
+
+// Route for the blog page
+Route::get('/dasboard', function () {
+    return view('dashboard.index'); 
+})->name('dashboard.index'); 
 
 // Display the quiz form
 Route::get('/quiz1', function () {
