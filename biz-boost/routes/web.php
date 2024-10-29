@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SignupController;
 use Illuminate\Http\Request;
+use App\Http\Controllers\DashboardController;
+
 
 // Route for Home page
 Route::get('/', function () {
@@ -73,3 +75,5 @@ Route::post('/quiz/submit', function (Request $request) {
     // Return results view with score and result message
     return view('quiz.result', ['score' => $score, 'resultMessage' => $resultMessage]);
 })->name('quiz.submit');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
